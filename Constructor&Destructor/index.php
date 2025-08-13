@@ -12,6 +12,7 @@ include('includes/include.inc.php');
   <?php
   
   $object = new Person;
+  unset($object);
   echo $object->getProperty();
 
   ?>
