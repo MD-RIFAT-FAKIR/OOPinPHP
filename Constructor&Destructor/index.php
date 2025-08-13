@@ -11,14 +11,8 @@ include('includes/include.inc.php');
 <body>
   <?php
   $person1 = new Person('rifat','black',24);
-  echo $person1->name.'<br>';
-  echo $person1->eyeColor.'<br>';
-  echo $person1->age.'<br>';
-  echo $person1->name.'<br>';
 
-  $person1->setName('jack');
-  echo $person1->name.'<br>';
-  echo $person1->name.'<br>';
+  echo $person1->getName();
 
 
   ?>
