@@ -1,24 +1,23 @@
 <?php
 class Person {
-  private $name;
-  private $eyeColor;
-  private $age;
+  public $data = 'I am a property';
 
-  //constructor
-  public function __construct(string $name, string $eyeColor, int $age) {
-    $this->name = $name;
-    $this->eyeColor = $eyeColor;
-    $this->age = $age;
+  public function __construct() {
+    echo 'This class has been instantiated <br>';
   }
 
-  //method
-  public function setName(string $name) {
-    $this->name = $name;
+  public function setNewProperty($newData) {
+    $this->data = $newData;
+  }
+  
+  public function getProperty() {
+    return $this->data;
   }
 
-  public function getName() {
-    return $this->name;
+  public function __destruct() {
+    echo '<br> This is the end of the class';
   }
+  
 
 }
 

@@ -10,10 +10,9 @@ include('includes/include.inc.php');
 </head>
 <body>
   <?php
-  $person1 = new Person('rifat','black',24);
-
-  echo $person1->getName();
-
+  
+  $object = new Person;
+  echo $object->getProperty();
 
   ?>
 </body>
