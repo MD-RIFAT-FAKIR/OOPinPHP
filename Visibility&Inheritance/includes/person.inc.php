@@ -1,19 +1,16 @@
 <?php
 
 class Person {
-  private $first = "Rifat";
+  protected $first = "Rifat";
   private $last = "Fakir";
   private $age = 24;
 
-  public function Owner() {
-    $a = $this->first;
-    return $a;
-  }
+  
 }
 
-class Pet {
+class Pet extends Person {
   public function Owner() {
-    $a = "hey there!";
+    $a = $this->first;
     return $a;
   }
 }

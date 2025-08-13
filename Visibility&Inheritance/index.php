@@ -13,9 +13,6 @@
     $petObj01 = new Pet();
     echo $petObj01->Owner()."<br>";
     
-    
-    $personObj01 = new Person();
-    echo $personObj01->Owner();
   ?>
 </body>
 </html>
